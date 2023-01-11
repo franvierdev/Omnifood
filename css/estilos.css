@@ -72,8 +72,6 @@
   margin-bottom: 4.8rem;
 }
 
-.hero-text-box {
-}
 .delivered-meals {
   display: flex;
   align-items: center;
@@ -312,7 +310,7 @@
   transform: scale(1.1);
 }
 /*************************/
-/* PRINCING */
+/* PRICING */
 /**************************/
 
 .section-pricing {
@@ -404,4 +402,116 @@
 .feature-text {
   font-size: 1.8rem;
   line-height: 1.8;
+}
+
+/*************************/
+/* CTA  */
+/**************************/
+
+.section-cta {
+  padding: 9.6rem 0;
+}
+.cta {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  /* background-color: #e67e22; */
+  box-shadow: 0 2.4 4.8 rgba(0, 0, 0, 0.075);
+  border-radius: 11px;
+
+  background-image: linear-gradient(to right bottom, #eb984e, #e67e22);
+  overflow: hidden;
+
+  /* temp */
+  /* height: 50rem; */
+}
+.cta-text-box {
+  padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+  color: #45260a;
+}
+.cta .heading-secundary {
+  /* color: #45260a; */
+  color: inherit;
+  margin-bottom: 3.2rem;
+}
+
+.cta-text {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  margin-bottom: 4.8rem;
+}
+
+.cta-img-box {
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(235, 151, 78, 0.3),
+      rgba(230, 125, 34, 0.3)
+    ),
+    url("../img/eating.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.cta-form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 3.2rem;
+  row-gap: 2.4rem;
+}
+
+.cta-form label {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-bottom: 1.2rem;
+}
+
+.cta-form input,
+.cta-form select {
+  width: 100%;
+  padding: 1.2rem;
+  font-size: 1.8rem;
+  font-family: inherit;
+  color: inherit;
+  border: none;
+  background-color: #fdf2e9;
+  border-radius: 9px;
+  box-shadow: 0 1px 2px rgb(0, 0, 0, 0.1);
+}
+.cta-form input::placeholder {
+  color: #aaa;
+}
+.cta *:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.8rem rgba(253, 242, 233, 0.5);
+}
+/* .cta-form select {
+  font-size: 1.8rem;
+  font-family: inherit;
+  padding: 1.2rem;
+  border-radius: 9px;
+  width: 100%;
+  background-color: #fdf2e9;
+  color: inherit;
+  border: none;
+  box-shadow: 0 1px 2px rgb(0, 0, 0, 0.1);
+} */
+.cta-form button {
+  align-self: flex-end;
+  border: none;
+  font-size: 2rem;
+  font-weight: 600;
+  font-family: inherit;
+  border-radius: 9px;
+  width: 100%;
+  padding: 1.2rem;
+  color: #fdf2e9;
+  background-color: #45260a;
+  cursor: pointer;
+  transition: all 0.3s;
+  /* height: 5rem; */
+}
+
+.cta-form button:hover,
+.cta-form button:active {
+  background-color: #fdf2e9;
+  color: #45260a;
 }

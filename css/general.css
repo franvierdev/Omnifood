@@ -30,7 +30,10 @@ Primary: #e67e22
 -Tints:
 #fdf2e9
 #fae5d3
+#eb984e
+
 -Shades:#cf711f
+#45260a
 -Accets: 
 -Greys:
 #6f6f6f (lightnest grey allowed on #fdf2e9)
@@ -39,7 +42,7 @@ Primary: #e67e22
 
 
 --- 05 SHADOWS
-btn-shdw: 0 2.4 4.8 (0, 0, 0, 0.075)
+btn-shdw: 0 2.4 4.8 rgba(0, 0, 0, 0.075)
 
 
 --- 06 BORDER -RADIUS
@@ -194,6 +197,12 @@ body {
   width: 3rem;
   height: 3rem;
   color: #e67e22;
+}
+*:focus {
+  outline: none;
+  /* outline: 4px solid #e67e22;
+  outline: 8px; */
+  box-shadow: 0 0 0 0.8rem rgba(230, 125, 34, 0.5);
 }
 
 .list-item {
