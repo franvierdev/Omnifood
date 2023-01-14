@@ -8,6 +8,7 @@
   align-items: center;
   height: 9.6rem;
   padding: 0 4.8rem;
+  position: relative;
 }
 .header img {
   height: 2.2rem;
@@ -21,8 +22,8 @@
   display: flex;
   list-style: none;
   align-items: center;
-  font-size: 2rem;
-  gap: 3.2rem;
+
+  gap: 4.8rem;
 }
 
 .header-nav-link:link,
@@ -49,6 +50,26 @@
 .header-nav-link.btn--nav:active {
   background-color: #cf711f;
 }
+
+/* MOBILE */
+.btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: none;
+}
+.icon-mobile-nav {
+  height: 4.8rem;
+  width: 4.8rem;
+  color: #333;
+}
+/* <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+      <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon> */
+
+.icon-mobile-nav[name="close-outline"] {
+  display: none;
+}
+
 /*************************/
 /* HERO SECTION */
 /**************************/
@@ -57,6 +78,7 @@
   background-color: #fdf2e9;
   padding: 4.8rem 0 9.6rem 0;
 }
+
 .hero {
   max-width: 130rem;
   margin: 0 auto;
@@ -135,8 +157,8 @@
 }
 
 .step-number {
-  color: #ddd;
   font-size: 8.6rem;
+  color: #ddd;
   font-weight: 600;
   margin-bottom: 1.2rem;
 }
@@ -265,9 +287,7 @@
 .testimonials-container {
   padding: 9.6rem;
 }
-.testimonial {
-  /* padding: 3.8rem; */
-}
+
 .testimonials {
   display: grid;
   grid-template-columns: 1fr 1fr;

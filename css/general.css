@@ -17,6 +17,7 @@ Bold:700
 Defaults: 1
 Small:1.05
 Medium: 1.2
+Large: 1.8
 Default parrafo:1.6
 
 
@@ -67,12 +68,16 @@ SPACING SYSTEM (px)
 }
 html {
   font-size: 62.5%;
+  overflow-x: hidden;
 }
+
 body {
   font-family: "Rubik", sans-serif;
   line-height: 1;
   font-weight: 400;
   color: #555;
+  /* solo trabajara si no hay nada posicionado en relacion al body */
+  overflow-x: hidden;
 }
 /********************/
 /*COMPONENTES GENERALES REUSABLES*/
@@ -213,6 +218,7 @@ body {
   display: flex;
   align-items: center;
   gap: 1.6rem;
+  line-height: 1.2;
 }
 
 /* HELPER/SETTINGS CLASSES */
