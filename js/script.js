@@ -1,9 +1,4 @@
 
-// h1.addEventListener("click", function () {
-//   h1.textContent = myName;
-//   h1.style.backgroundColor = "red";
-//   h1.style.padding = "5rem";
-// });
 
 ///////////////////////////////////////////////////////////
 // Set current year
